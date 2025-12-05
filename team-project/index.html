@@ -3,25 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garage Website</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>tester</title>
+  
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <nav class="navbar">
-    <div class="logo">👌Teambased</div>
+<nav class="navbar">
+    <div class="logo">Flight Booking</div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Corporate Clients</a></li>
+      <li><a href="#">Reference</a></li>
+      <li><a href="#"><i class="fa-solid fa-circle-user"></i>My Ticket</a></li>
     </ul>
     <div class="menu-icon" id="menuBtn"> ☰ </div> 
   </nav>
-  
+    <main>
+       <section class="hero">
+        <div class="content">
+            <h1>🪁FLIGHT<br>BOOKING</h1>
+
+            <form class="booking-form">
+                
+                <label>Flying from</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <select>
+                        <option value="1">Select departure point...</option>
+                        <option value="2">Addis Ababa</option>
+                        <option value="3">Nairobi</option>
+                        <option value="4">Dubai</option>
+                        <option value="5">London</option>
+                    </select>
+                </div>
+
+                <label>Flying to</label>
+                <div class="input-box">
+                    <i class="fa-solid fa-plane-arrival"></i>
+                    <select id="option">
+                        <option>Select your destination...</option>
+                        <option>Addis Ababa</option>
+                        <option>Nairobi</option>
+                        <option>Dubai</option>
+                        <option>London</option>
+                    </select>
+                </div>
+
+                <div class="grid">
+                    <div>
+                        <label>Departing</label>
+                        <input type="date" id="depart">
+                    </div>
+                    <div>
+                        <label>Returning</label>
+                        <input type="date" id="return">
+                    </div>
+                    <div>
+                        <label>Adults</label>
+                        <input type="number" min="1" value="1" id="Adults">
+                    </div>
+                    <div>
+                        <label>Children</label>
+                        <input type="number" min="0" value="0" id="Children">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" id="btn">Flight Booking</button>
+
+            </form>
+        </div>
+    </div>
+    </section>
+    </main>
+    <div id="result">
+        <section>
+            <h2>Booking Summary</h2>
+            <p id="summary"></p>
+            
+        </section>
+
 <script src="./javascript/script.js"></script>
 </body>
 </html>
